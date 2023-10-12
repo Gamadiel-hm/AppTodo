@@ -7,7 +7,7 @@ export interface TodoList {
   password: string;
   gender: string;
   nationality: string;
-  id: number;
+  $id: number;
 }
 
 export const todoInit: TodoList = {
@@ -17,7 +17,7 @@ export const todoInit: TodoList = {
   gender: '',
   nationality: '',
   password: '',
-  id: 0,
+  $id: 0,
 };
 
 export interface ObjectSortTitles {

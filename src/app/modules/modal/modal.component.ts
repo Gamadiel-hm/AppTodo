@@ -57,7 +57,7 @@ export class ModalComponent implements OnChanges {
   handleChangeTodo() {
     const todoEmitter: TodoList = {
       ...this.formTodoModal.value,
-      id: this.todoItem.id,
+      $id: this.todoItem.$id,
     };
     this.modalChangeLogic();
     if (this.buttonOption === 'Update') this.changeTodo.emit(todoEmitter);

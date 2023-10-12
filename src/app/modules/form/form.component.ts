@@ -34,7 +34,7 @@ export class FormComponent implements OnInit {
       password,
       nationality,
       gender: '',
-      id: this.contId,
+      $id: this.contId,
     };
     if (this.maleInput.nativeElement.checked) this.initTodo.gender = male;
     else this.initTodo.gender = female;
