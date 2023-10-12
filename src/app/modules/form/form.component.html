@@ -1,0 +1,44 @@
+<form (ngSubmit)="getDataForm()" [formGroup]="formTodo" class="form-todo">
+  <div class="container-input">
+    <input required formControlName="name" type="text" id="name">
+    <label for="name">Name</label>
+    <span></span>
+  </div>
+  <div class="container-input">
+    <input required formControlName="lastName" type="text" id="lastName">
+    <label for="lastName">Last name</label>
+    <span></span>
+  </div>
+  <div class="container-input">
+    <input required formControlName="age" type="text" id="age">
+    <label for="age">Age</label>
+    <span></span>
+  </div>
+  <div class="container-input">
+    <input required formControlName="password" type="password" id="password">
+    <label for="password">Password</label>
+    <span></span>
+  </div>
+  <div class="container-checkbox">
+    <div>
+      <input #asmale (click)="changeInputRadio('male')" formControlName="male" type="radio" value="male" id="male"
+        name="male" />
+      <label for="male">Male</label>
+    </div>
+    <div>
+      <input #asfemale (click)="changeInputRadio('female')" formControlName="female" type="radio" value="female"
+        id="female" name="female" />
+      <label for="female">Female</label>
+    </div>
+  </div>
+  <div class="container-input">
+    <input required formControlName="nationality" type="text" id="nationality">
+    <label for="nationality">Nationality</label>
+    <span></span>
+  </div>
+  <div class="container-button">
+    <button (click)="clearForm()" type="button">Clear</button>
+    <button [disabled]="formTodo.invalid" type="submit">Send</button>
+    <span></span>
+  </div>
+</form>

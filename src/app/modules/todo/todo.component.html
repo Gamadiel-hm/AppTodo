@@ -1,0 +1,25 @@
+<table class="table-todo">
+  <thead>
+    <th (click)="handleSortTitle(enumsTitle[0])">Name</th>
+    <th (click)="handleSortTitle(enumsTitle[1])" class="lastName">LastName</th>
+    <th (click)="handleSortTitle(enumsTitle[2])">Age</th>
+    <th (click)="handleSortTitle(enumsTitle[3])">Nationality</th>
+    <th (click)="handleSortTitle(enumsTitle[4])">Gender</th>
+    <th>Actions</th>
+  </thead>
+  <tbody *ngFor="let item of todoList | sort:objectTitleSort:sortTitle">
+    <td>{{item.name}}</td>
+    <td class="lastName">{{item.lastName}}</td>
+    <td>{{item.age}}</td>
+    <td>{{item.nationality}}</td>
+    <td>{{item.gender}}</td>
+    <td class="td-buttons">
+      <button type="button" (click)="handleModalOpen(item, 'Delete')"><i class="uil uil-trash-alt"></i></button>
+      <button type="button" (click)="handleModalOpen(item, 'Update')"><i class="uil uil-export"></i></button>
+    </td>
+  </tbody>
+</table>
+
+<app-modal [buttonOption]="buttonOptionModal" [modalBoolean]="modalLogic" [todoItem]="todoItem"
+  (updateModal)="handleModalClose()" (changeTodo)="handleTodoEmit($event)"
+  (deleteTodo)="handleTodoDelete($event)"></app-modal>

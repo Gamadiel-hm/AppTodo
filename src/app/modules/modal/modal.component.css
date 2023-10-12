@@ -1,0 +1,55 @@
+/* Modal style */
+.container-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #413f3f;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-open {
+  display: flex;
+  transition: all 1s;
+}
+
+.modal {
+  width: 20rem;
+  height: 20rem;
+  outline: 1px solid #f3eeee;
+  border-radius: 0.45rem;
+  padding: 2rem;
+}
+
+.modal-head {
+  border-bottom: 1px solid #f3eeee;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.modal-body div,
+.modal-body div input,
+.modal-body div button {
+  color: #ffffff;
+  transition: all 0.6s;
+}
+
+.modal-body div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: baseline;
+}
+
+.modal-body div button:first-child:hover {
+  background-color: #29df6f;
+  transition: all 0.6s;
+}
+.modal-body div button:last-child:hover {
+  background-color: #a54c4c;
+  transition: all 0.6s;
+}

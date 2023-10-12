@@ -1,0 +1,33 @@
+<div (click)="modalChangeLogic()" class="container-modal" [ngClass]="{'modal-open': modalBoolean === true}">
+  <form (ngSubmit)="handleChangeTodo()" [formGroup]="formTodoModal" class="modal" (click)="stopPropagation($event)">
+    <div class="modal-head">
+      <div>Name: {{todoItem.name}}</div>
+    </div>
+    <div class="modal-body">
+      <div>
+        <input formControlName="name" id="nameModal" type="text" [value]="todoItem.name">
+        <label for="nameModal">Name</label>
+      </div>
+      <div>
+        <input formControlName="lastName" id="lastNameModal" type="text" [placeholder]="todoItem.lastName">
+        <label for="lastName">LastName</label>
+      </div>
+      <div>
+        <input formControlName="age" id="ageModal" type="text" [placeholder]="todoItem.age">
+        <label for="ageModal">Age</label>
+      </div>
+      <div>
+        <input formControlName="gender" id="genderModal" type="text" [placeholder]="todoItem.gender">
+        <label for="genderModal">Gender</label>
+      </div>
+      <div>
+        <input formControlName="nationality" id="nationalityModal" type="text" [placeholder]="todoItem.nationality">
+        <label for="nationalityModal">Nationality</label>
+      </div>
+      <div>
+        <button type="submit">{{buttonOption}}</button>
+        <button (click)="modalChangeLogic()" type="button">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>

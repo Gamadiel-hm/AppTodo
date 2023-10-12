@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #dfdfdf;
+}
+
+input {
+  background: none;
+  border-radius: 0.45rem;
+  outline: none;
+}
+
+input:placeholder {
+  padding-left: 1rem;
+}
+
+button {
+  background: 0;
+  width: 6rem;
+  outline: none;
+  border-radius: 0.35rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}

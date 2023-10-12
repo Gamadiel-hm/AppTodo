@@ -1,0 +1,103 @@
+.table-todo {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.table-todo thead {
+  height: 2rem;
+}
+
+.table-todo thead th {
+  text-align: start;
+  height: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.45rem;
+}
+.table-todo thead th:last-child {
+  cursor: default;
+}
+
+.table-todo thead th:last-child {
+  text-align: center;
+}
+.table-todo thead th:hover {
+  background-color: #b1afb0de;
+}
+
+.table-todo thead th:last-child:hover {
+  background: none;
+}
+
+tbody td {
+  padding: 0.4rem 0;
+}
+tbody {
+  border-radius: 0.45rem;
+}
+
+tbody:nth-last-child(odd):hover {
+  background-color: #b1afb0de;
+}
+tbody:nth-last-child(even):hover {
+  background-color: #6e6e6ede;
+}
+
+.td-buttons button {
+  width: 2rem;
+  height: 1.5rem;
+  transition: all 0.4s;
+}
+
+.td-buttons {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: space-around;
+}
+.td-buttons button:first-child {
+  color: #d10e79;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.td-buttons button:first-child:hover {
+  background-color: #d10e79;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.td-buttons button:nth-last-child(odd) {
+  color: #1f65b6;
+  font-size: 1.2rem;
+  position: relative;
+}
+.td-buttons button:nth-last-child(odd):hover {
+  background-color: #1f65b6;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.td-buttons button i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, 0%);
+}
+
+.lastName {
+  display: none;
+}
+
+@media (min-width: 520px) {
+  .lastName {
+    display: table-cell;
+  }
+
+  .table-todo {
+    padding: 0;
+  }
+
+  .table-todo thead th {
+    font-size: 1.09rem;
+  }
+}
