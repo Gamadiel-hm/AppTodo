@@ -1,11 +1,10 @@
 name: Say workFlow Initial
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
 jobs:
-  hello-world:
+  First-WorkFlow:
     runs-on: ubuntu-18.04
     steps:
-      - name: Echo the message
-        run: echo "Hello work flow angular"
+      - name: Echo terminal
+        run: echo terminal
