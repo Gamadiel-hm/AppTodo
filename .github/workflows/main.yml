@@ -3,7 +3,7 @@ on:
   push:
     branches: ["main"]
 jobs:
-  First-WorkFlow:
+  firts_workFlow:
     runs-on: ubuntu-18.04
     steps:
       - name: Echo terminal
