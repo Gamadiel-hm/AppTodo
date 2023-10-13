@@ -7,4 +7,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Echo terminal
-        run: echo terminal
+        run: echo "terminal"
+      - name: Dime la fecha
+        run: date
+      - run: ls -l
