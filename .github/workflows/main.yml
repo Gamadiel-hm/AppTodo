@@ -7,5 +7,5 @@ jobs:
   hello-world:
     runs-on: ubuntu-18.04
     steps:
-      - name: Echho the message
+      - name: Echo the message
         run: echo "Hello work flow angular"
