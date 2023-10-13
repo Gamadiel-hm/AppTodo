@@ -1,0 +1,11 @@
+name: Say workFlow Initial
+on:
+  push:
+    branches:
+      -main:
+jobs:
+  hello-world:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Echho the message
+        run: echo "Hello work flow angular"
