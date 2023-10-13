@@ -4,7 +4,7 @@ on:
     branches: ["main"]
 jobs:
   firts_workFlow:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Echo terminal
         run: echo "terminal"
